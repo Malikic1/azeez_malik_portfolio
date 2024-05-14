@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     screens: {
       esm: "415px",
-      sm: "480px",
-      es: "510px",
-      md: "768px",
+      sm: "557px",
+      es: "625px",
+      md: "650px",
+      emd: "830px",
       lg: "976px",
-      mlg: "1060px",
       xl: "1300px",
     },
     extend: {
@@ -16,6 +16,8 @@ module.exports = {
         dark: "black",
         light: "white",
         whitesmoke: "rgba(225, 225, 225)",
+        smoke: "rgba(225, 225, 225, 0.7)",
+        trans: "transparent",
         blueviolet: " rgb(152, 84, 216)",
         blue: "rgb(0, 0, 50)",
         bluesmoke: "rgba(56, 23, 29, 0.561)",

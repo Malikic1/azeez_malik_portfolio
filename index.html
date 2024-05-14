@@ -32,13 +32,12 @@
       }
       .custom-shape-divider-bottom-1715644825 {
         position: absolute;
-        bottom: 0rem;
         left: 0;
+        margin-top: 0;
         width: 100%;
         overflow: hidden;
         line-height: 0;
       }
-
       .custom-shape-divider-bottom-1715644825 svg {
         position: relative;
         display: block;
@@ -49,15 +48,41 @@
       .custom-shape-divider-bottom-1715644825 .shape-fill {
         fill: rgb(0, 0, 75);
       }
+
+      @media (max-width: 650px) {
+        .bg-gradient {
+          background-image: linear-gradient(
+            to bottom,
+            rgb(0 0 75) 40%,
+            royalblue
+          ) !important;
+        }
+        header {
+          width: -webkit-fill-available !important;
+        }
+      }
+      .height_header {
+        height: 18rem;
+      }
     </style>
   </head>
   <body class="text-light">
-    <header class="flex bg-blue justify-between px-8 py-4">
+    <header
+      id="header"
+      class="mx-4 md:mx-0 fixed md:relative z-20 top-2 flex bg-smoke rounded-full md:rounded-none md:bg-blue justify-between px-2 md:px-4 emd:px-8 py-4"
+    >
       <div class="">
-        <h2 class="text-xl text-darkgrey font-bold">AzeezCode</h2>
+        <h2 class="ml-10 mt-1 md:ml-0 text-xl text-royal font-bold">
+          AzeezCode
+        </h2>
       </div>
-      <div>
-        <ul class="flex text-base text-whitesmoke">
+      <div
+        id="nav"
+        class="bg-trans hidden md:block md:bg-blue mt-12 md:mt-0 absolute md:relative left-6 md:left-0"
+      >
+        <ul
+          class="flex flex-col gap-y-4 md:gap-y-0 md:flex-row pl-6 md:pl-0 text-base text-blue md:text-whitesmoke"
+        >
           <li class="mr-4 font-bold"><a href="">Home</a></li>
           <li class="mr-4"><a href="">About</a></li>
           <li class="mr-4"><a href="">Skill</a></li>
@@ -66,22 +91,34 @@
         </ul>
       </div>
       <div>
-        <button class="bg-whitesmoke text-blue px-2 py-1 rounded">
+        <button class="bg-trans md:bg-whitesmoke text-blue px-2 py-1 rounded">
           <i class="fa-solid fa-hand-sparkles text-xl"></i>
           &nbsp;<span class="font-bold text-base">HELLO</span>
         </button>
       </div>
+      <button
+        id="menu_btn"
+        class="block md:hidden absolute text-darkgrey px-2 py-1 rounded"
+      >
+        <i class="fa-solid fa-bars-staggered text-xl"></i>
+      </button>
     </header>
     <main>
-      <div class="flex bg-blue justify-evenly pt-16">
-        <section class="w-1/2 z-10">
+      <div
+        class="pb-8 md:pb-0 bg-gradient flex-col-reverse md:flex-row flex bg-blue justify-evenly gap-y-8 md:gap-y-0 pt-8 md:pt-16 px-2 emd:px-0"
+      >
+        <section class="w-100 md:w-1/2 z-10 text-center md:text-left">
           <p>
-            <span class="text-4xl courier text-whitesmoke">HELLO, I AM</span>
+            <span class="text-2xl emd:text-4xl courier text-whitesmoke"
+              >HELLO, I AM</span
+            >
             <br />
-            <span class="arial text-8xl text-whitesmoke">AZEEZ</span
-            >&nbsp;&nbsp;<span class="lucida text-royal text-8xl">MALIK.</span
+            <span class="arial text-5xl emd:text-7xl text-whitesmoke"
+              >AZEEZ</span
+            >&nbsp;&nbsp;<span class="lucida text-royal text-5xl emd:text-7xl"
+              >MALIK.</span
             ><br />
-            <span class="text-xl text-whitesmoke"
+            <span class="text-base emd:text-xl text-whitesmoke"
               ><span class="text-royal"
                 ><i class="fa-solid fa-minus"></i
                 ><i class="fa-solid fa-minus"></i
@@ -92,7 +129,7 @@
               FULL-STACK DEVELOPER.</span
             ><br />
           </p>
-          <p class="lucida mt-8 w-3/4 text-whitesmoke">
+          <p class="lucida mt-8 w-100 emd:w-3/4 text-whitesmoke">
             A young,creative,passionate and hardworking Coder who is willing to
             work with clients from all over the world to build successful.
           </p>
@@ -108,7 +145,10 @@
             </button>
           </p>
         </section>
-        <div class="custom-shape-divider-bottom-1715644825 z-0">
+
+        <div
+          class="custom-shape-divider-bottom-1715644825 hidden md:block md:-mt-4 emd:mt-4 z-0"
+        >
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -121,23 +161,27 @@
             ></path>
           </svg>
         </div>
+
         <section
-          class="bg-light p-4 z-10"
+          class="mt-24 md:mt-0 bg-light p-4 w-80 md:w-64 emd:w-80 m-auto md:m-0 z-10"
           style="
-            width: 25rem;
-            height: 25rem;
-            border-top-left-radius: 15rem;
-            border-top-right-radius: 11rem;
-            border-bottom-left-radius: 12rem;
-            border-bottom-right-radius: 10rem;
+            border-top-left-radius: 13rem;
+            border-top-right-radius: 9rem;
+            border-bottom-left-radius: 8rem;
+            border-bottom-right-radius: 6rem;
           "
         >
-          <img src="image/malik3.png" class="w-64 m-auto rounded-full" />
+          <img
+            src="image/malik3.png"
+            class="w-64 md:w-48 emd:w-64 m-auto rounded-full"
+          />
         </section>
       </div>
       <br /><br />
-      <div class="mt-16 flex py-4 px-4 justify-evenly text-blue">
-        <section class="w-1/3">
+      <div
+        class="mt-8 md:mt-20 emd:mt-16 flex flex-col md:flex-row gap-y-8 md:gap-y-0 gap-x-4 lg:gap-0 px-2 py-2 sm:py-4 sm:px-4 justify-evenly text-blue"
+      >
+        <section class="w-100 md:w-1/2 lg:w-1/3">
           <div class="bg-blue justify-evenly py-4 rounded flex">
             <div class="self-center font-bold text-light text-3xl">
               About Me
@@ -149,7 +193,7 @@
               />
             </div>
           </div>
-          <div class="w-72 m-auto">
+          <div class="w-96 md:w-72 m-auto">
             <section class="flex justify-between mt-4">
               <span class="text-blue border-l border-blue pl-4 font-bold"
                 ><i class="fa-solid fa-user"></i>&nbsp; Name</span
@@ -177,7 +221,9 @@
           </div>
         </section>
 
-        <section class="w-1/3">
+        <section
+          class="w-100 md:w-1/2 lg:w-1/3 text-center md:text-left px-4 sm:px-0"
+        >
           <h4 class="text-xl font-bold text-blue">PHP Developer</h4>
 
           <p class="text-darkgrey">
@@ -206,8 +252,10 @@
         </section>
       </div>
 
-      <div class="mt-16 py-4 px-4 justify-evenly text-blue">
-        <section class="w-1/2">
+      <div
+        class="mt-8 md:mt-16 px-2 py-2 sm:py-4 sm:px-4 justify-evenly text-blue"
+      >
+        <section class="w-100 md:w-1/2">
           <div class="bg-blue justify-evenly py-4 rounded flex">
             <div class="self-center text-light font-bold text-3xl">
               My Skill
@@ -258,8 +306,10 @@
         </section>
       </div>
 
-      <div class="mt-16 py-4 px-4 justify-evenly text-blue">
-        <section class="w-1/2">
+      <div
+        class="mt-8 md:mt-16 px-2 py-2 sm:py-4 sm:px-4 justify-evenly text-blue"
+      >
+        <section class="w-100 md:w-1/2">
           <div class="bg-blue justify-evenly py-4 rounded flex">
             <div class="self-center text-light font-bold text-3xl">
               Projects
@@ -273,8 +323,12 @@
           </div>
         </section>
 
-        <div class="grid grid-cols-3 gap-y-8 mt-8">
-          <section class="w-72 p-4 rounded-lg bg-whitesmoke">
+        <div
+          class="grid gap-x-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 mt-8"
+        >
+          <section
+            class="w-100 md:w-72 m-auto lg:m-0 p-2 sm:p-3 es:p-4 rounded-lg bg-whitesmoke"
+          >
             <img src="image/3crypto.png" alt="" class="rounded" />
             <div>
               <p class="text-royal text-2xl mt-4 font-bold">3crypto</p>
@@ -283,27 +337,31 @@
                 >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
                   >CSS</mark
                 >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >Javascript</mark
+                  >JS</mark
                 >&nbsp;
                 <mark class="text-light text-sm bg-darkgrey px-1">API</mark>
               </p>
             </div>
             <div class="flex justify-between mt-4">
-              <button class="px-4 py-2 rounded bg-blue text-whitesmoke">
+              <button
+                class="px-4 py-2 text-base rounded bg-blue text-whitesmoke"
+              >
                 <i class="fa-brands fa-github"></i>&nbsp; Code
               </button>
               <button
-                class="px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
+                class="text-base px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
                 Live Demo
               </button>
             </div>
           </section>
-          <section class="w-72 p-4 rounded-lg bg-whitesmoke">
+          <section
+            class="w-100 md:w-72 m-auto lg:m-0 p-2 sm:p-3 es:p-4 rounded-lg bg-whitesmoke"
+          >
             <img src="image/nft1.png" alt="" class="rounded" />
             <div>
-              <p class="text-royal text-2xl mt-4 font-bold">3crypto</p>
+              <p class="text-royal mt-2 text-2xl mt-4 font-bold">NFT Market</p>
               <p class="my-2">
                 <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
                 >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
@@ -311,7 +369,6 @@
                 >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
                   >Javascript</mark
                 >&nbsp;
-                <mark class="text-light text-sm bg-darkgrey px-1">API</mark>
               </p>
             </div>
             <div class="flex justify-between mt-4">
@@ -326,18 +383,17 @@
               </button>
             </div>
           </section>
-          <section class="w-72 p-4 rounded-lg bg-whitesmoke">
+          <section
+            class="w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
+          >
             <img src="image/nike.png" alt="" class="rounded" />
             <div>
-              <p class="text-royal text-2xl mt-4 font-bold">3crypto</p>
+              <p class="text-royal text-2xl mt-4 font-bold">Nike Design</p>
               <p class="my-2">
                 <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
                 >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
                   >CSS</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >Javascript</mark
-                >&nbsp;
-                <mark class="text-light text-sm bg-darkgrey px-1">API</mark>
+                >
               </p>
             </div>
             <div class="flex justify-between mt-4">
@@ -352,18 +408,51 @@
               </button>
             </div>
           </section>
-          <section class="w-72 p-4 rounded-lg bg-whitesmoke">
+          <section
+            class="w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
+          >
+            <img src="image/tipzone.png" alt="" class="rounded" />
+            <div>
+              <p class="text-royal text-2xl mt-4 font-bold">FTS</p>
+              <p class="my-2">
+                <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
+                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
+                  >CSS</mark
+                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
+                  >JS</mark
+                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
+                  >PHP</mark
+                >
+              </p>
+            </div>
+            <div class="flex justify-between mt-4">
+              <button
+                class="px-4 py-2 text-sm sm:text-base rounded bg-blue text-whitesmoke"
+              >
+                <i class="fa-brands fa-github"></i>&nbsp; Code
+              </button>
+              <button
+                class="px-4 py-2 text-sm sm:text-base rounded border-blue border text-blue bg-whitesmoke"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
+                Live Demo
+              </button>
+            </div>
+          </section>
+
+          <section
+            class="w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
+          >
             <img src="image/nft2.png" alt="" class="rounded" />
             <div>
-              <p class="text-royal text-2xl mt-4 font-bold">3crypto</p>
+              <p class="text-royal text-2xl mt-2 mt-4 font-bold">NFT Store</p>
               <p class="my-2">
                 <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
                 >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
                   >CSS</mark
                 >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
                   >Javascript</mark
-                >&nbsp;
-                <mark class="text-light text-sm bg-darkgrey px-1">API</mark>
+                >
               </p>
             </div>
             <div class="flex justify-between mt-4">
@@ -378,21 +467,45 @@
               </button>
             </div>
           </section>
-          <section class="w-72 p-4 rounded-lg bg-whitesmoke">
+          <section
+            class="w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
+          >
+            <img src="image/basel.png" alt="" class="rounded" />
+            <div>
+              <p class="text-royal text-2xl mt-4 font-bold">Basel Apparel</p>
+              <p class="my-2">
+                <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
+                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
+                  >CSS</mark
+                >
+              </p>
+            </div>
+            <div class="flex justify-between mt-4">
+              <button class="px-4 py-2 rounded bg-blue text-whitesmoke">
+                <i class="fa-brands fa-github"></i>&nbsp; Code
+              </button>
+              <button
+                class="px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
+                Live Demo
+              </button>
+            </div>
+          </section>
+          <section
+            class="w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
+          >
             <img src="image/nft3.png" alt="" class="rounded" />
             <div>
-              <p class="text-royal text-2xl mt-4 font-bold">3crypto</p>
+              <p class="text-royal text-2xl mt-4 font-bold">NFT</p>
               <p class="my-2">
                 <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
                 >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
                   >CSS</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >Javascript</mark
-                >&nbsp;
-                <mark class="text-light text-sm bg-darkgrey px-1">API</mark>
+                >
               </p>
             </div>
-            <div class="flex justify-between mt-4">
+            <div class="flex justify-between mt-2 sm:mt-4">
               <button class="px-4 py-2 rounded bg-blue text-whitesmoke">
                 <i class="fa-brands fa-github"></i>&nbsp; Code
               </button>
@@ -404,18 +517,17 @@
               </button>
             </div>
           </section>
-          <section class="w-72 p-4 rounded-lg bg-whitesmoke">
+          <section
+            class="w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
+          >
             <img src="image/vr.png" alt="" class="rounded" />
             <div>
-              <p class="text-royal text-2xl mt-4 font-bold">3crypto</p>
-              <p class="my-2">
+              <p class="text-royal text-2xl mt-4 font-bold">VR</p>
+              <p class="my-1 sm:my-2">
                 <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
                 >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
                   >CSS</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >Javascript</mark
-                >&nbsp;
-                <mark class="text-light text-sm bg-darkgrey px-1">API</mark>
+                >
               </p>
             </div>
             <div class="flex justify-between mt-4">
@@ -430,18 +542,17 @@
               </button>
             </div>
           </section>
-          <section class="w-72 p-4 rounded-lg bg-whitesmoke">
+          <section
+            class="w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
+          >
             <img src="image/w.png" alt="" class="rounded" />
             <div>
-              <p class="text-royal text-2xl mt-4 font-bold">3crypto</p>
+              <p class="text-royal text-2xl mt-4 font-bold">W.</p>
               <p class="my-2">
                 <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
                 >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
                   >CSS</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >Javascript</mark
-                >&nbsp;
-                <mark class="text-light text-sm bg-darkgrey px-1">API</mark>
+                >
               </p>
             </div>
             <div class="flex justify-between mt-4">
@@ -449,7 +560,7 @@
                 <i class="fa-brands fa-github"></i>&nbsp; Code
               </button>
               <button
-                class="px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
+                class="text-sm sm:text-base px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
                 Live Demo
@@ -458,9 +569,11 @@
           </section>
         </div>
       </div>
-      <div class="bg-whitesmoke mt-8 text-center py-32">
+      <div class="bg-whitesmoke mt-8 text-center py-28">
         <p class="text-4xl text-royal font-bold">Connect With Me</p>
-        <p class="text-base text-darkgrey mt-2 w-1/2 m-auto">
+        <p
+          class="text-base text-darkgrey mt-2 w-100 px-8 emd:px-0 emd:w-1/2 m-auto"
+        >
           I'm enthusiastic about the opportunity to contribute my skills to your
           project or team. Your message means a lot, and I'm excited about the
           possibility of working together!
@@ -486,5 +599,6 @@
         © 2024 AzeezCode. All rights reserved.
       </p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
