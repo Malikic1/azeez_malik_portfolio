@@ -17,6 +17,7 @@
       .shadow {
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
       }
+
       .verdana {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
@@ -50,11 +51,14 @@
       }
 
       @media (max-width: 650px) {
+        .shadow1 {
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px 0px;
+        }
         .bg-gradient {
           background-image: linear-gradient(
             to bottom,
-            rgb(0 0 75) 40%,
-            royalblue
+            rgb(0 0 75) 50%,
+            royalblue 50%
           ) !important;
         }
         header {
@@ -69,11 +73,13 @@
   <body class="text-light">
     <header
       id="header"
-      class="mx-4 md:mx-0 fixed md:relative z-20 top-2 flex bg-smoke rounded-full md:rounded-none md:bg-blue justify-between px-2 md:px-4 emd:px-8 py-4"
+      class="mx-4 shadow1 md:mx-0 fixed md:relative z-20 top-2 flex bg-smoke rounded-full md:rounded-none md:bg-blue justify-between px-2 md:px-4 emd:px-8 py-4"
     >
-      <div class="">
-        <h2 class="ml-10 mt-1 md:ml-0 text-xl text-royal font-bold">
-          AzeezCode
+      <div>
+        <h2
+          class="courier ml-10 text-blue md:text-darkgrey mt-1 md:ml-0 text-xl font-bold"
+        >
+          <i>AzeezCode</i>
         </h2>
       </div>
       <div
@@ -163,7 +169,7 @@
         </div>
 
         <section
-          class="mt-24 md:mt-0 bg-light p-4 w-80 md:w-64 emd:w-80 m-auto md:m-0 z-10"
+          class="mt-24 bg-whitesmoke md:mt-0 bg-light p-4 w-80 md:w-64 emd:w-80 m-auto md:m-0 z-10"
           style="
             border-top-left-radius: 13rem;
             border-top-right-radius: 9rem;
@@ -173,13 +179,13 @@
         >
           <img
             src="image/malik3.png"
-            class="w-64 md:w-48 emd:w-64 m-auto rounded-full"
+            class="w-56 es:w-64 md:w-48 emd:w-64 m-auto rounded-full"
           />
         </section>
       </div>
       <br /><br />
       <div
-        class="mt-8 md:mt-20 emd:mt-16 flex flex-col md:flex-row gap-y-8 md:gap-y-0 gap-x-4 lg:gap-0 px-2 py-2 sm:py-4 sm:px-4 justify-evenly text-blue"
+        class="mt-0 md:mt-20 emd:mt-16 flex flex-col md:flex-row gap-y-8 md:gap-y-0 gap-x-4 lg:gap-0 px-2 py-2 sm:py-4 sm:px-4 justify-evenly text-blue"
       >
         <section class="w-100 md:w-1/2 lg:w-1/3">
           <div class="bg-blue justify-evenly py-4 rounded flex">
@@ -193,7 +199,7 @@
               />
             </div>
           </div>
-          <div class="w-96 md:w-72 m-auto">
+          <div class="w-100 es:w-96 md:w-72 m-auto">
             <section class="flex justify-between mt-4">
               <span class="text-blue border-l border-blue pl-4 font-bold"
                 ><i class="fa-solid fa-user"></i>&nbsp; Name</span
@@ -269,39 +275,39 @@
           </div>
         </section>
         <section class="flex mt-8 justify-evenly">
-          <div class="text-center shadow px-4 py-2 w-auto">
+          <div class="text-center shadow px-2 es:px-4 py-2 w-auto">
             <img src="image/html.svg" alt="" class="w-12 m-auto" />
-            <p>HTML</p>
+            <p class="font-bold text-sm">HTML</p>
           </div>
           <div class="text-center shadow px-4 py-2 w-auto">
             <img src="image/css.svg" alt="" class="w-12 m-auto" />
-            <p>CSS</p>
+            <p class="font-bold text-sm">CSS</p>
           </div>
-          <div class="text-center shadow px-4 py-2 w-auto">
+          <div class="text-center shadow px-2 es:px-4 py-2 w-auto">
             <img src="image/bootstrap.svg" alt="" class="w-12 m-auto" />
-            <p>Bootstrap</p>
+            <p class="font-bold text-sm">Bootstrap</p>
           </div>
-          <div class="text-center shadow px-4 py-2 w-auto">
+          <div class="text-center shadow px-2 es:px-4 py-2 w-auto">
             <img src="image/tailwind.svg" alt="" class="w-12 m-auto" />
-            <p>Tailwindcss</p>
+            <p class="font-bold text-sm">Tailwindcss</p>
           </div>
         </section>
         <section class="flex mt-8 justify-evenly">
-          <div class="text-center shadow px-4 py-2 w-auto">
+          <div class="text-center shadow px-2 es:px-4 py-2 w-auto">
             <img src="image/javascript.svg" alt="" class="w-12 m-auto" />
-            <p>Javascript</p>
+            <p class="font-bold text-sm">Javascript</p>
           </div>
           <div class="text-center shadow px-4 py-2 w-auto">
             <img src="image/react.svg" alt="" class="w-12 m-auto" />
-            <p>ReactJS</p>
+            <p class="font-bold text-sm">ReactJS</p>
           </div>
           <div class="text-center shadow px-4 py-2 w-auto">
             <img src="image/php.svg" alt="" class="w-12 m-auto" />
-            <p>PHP</p>
+            <p class="font-bold text-sm">PHP</p>
           </div>
           <div class="text-center shadow px-4 py-2 w-auto">
             <img src="image/git.svg" alt="" class="w-12" />
-            <p>Git</p>
+            <p class="font-bold text-sm">Git</p>
           </div>
         </section>
       </div>
@@ -344,11 +350,13 @@
             </div>
             <div class="flex justify-between mt-4">
               <button
+                onclick="window.open('https://github.com/Malikic1/cryptoweb','_blank')"
                 class="px-4 py-2 text-base rounded bg-blue text-whitesmoke"
               >
                 <i class="fa-brands fa-github"></i>&nbsp; Code
               </button>
               <button
+                onclick="window.open('https://3crypto.netlify.app/','_blank')"
                 class="text-base px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
@@ -372,10 +380,14 @@
               </p>
             </div>
             <div class="flex justify-between mt-4">
-              <button class="px-4 py-2 rounded bg-blue text-whitesmoke">
+              <button
+                onclick="window.open('https://github.com/Malikic1/nft-website','_blank')"
+                class="px-4 py-2 rounded bg-blue text-whitesmoke"
+              >
                 <i class="fa-brands fa-github"></i>&nbsp; Code
               </button>
               <button
+                onclick="window.open('https://nftmarket-malikic1.netlify.app/','_blank')"
                 class="px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
@@ -397,10 +409,14 @@
               </p>
             </div>
             <div class="flex justify-between mt-4">
-              <button class="px-4 py-2 rounded bg-blue text-whitesmoke">
+              <button
+                onclick="window.open('https://github.com/Malikic1/Nike-Project','_blank')"
+                class="px-4 py-2 rounded bg-blue text-whitesmoke"
+              >
                 <i class="fa-brands fa-github"></i>&nbsp; Code
               </button>
               <button
+                onclick="window.open('https://nike-malikic1.netlify.app/','_blank')"
                 class="px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
@@ -427,11 +443,13 @@
             </div>
             <div class="flex justify-between mt-4">
               <button
+                onclick="window.open('https://github.com/Malikic1/Tipzone','_blank')"
                 class="px-4 py-2 text-sm sm:text-base rounded bg-blue text-whitesmoke"
               >
                 <i class="fa-brands fa-github"></i>&nbsp; Code
               </button>
               <button
+                onclick="window.open('https://footballtipzone.000webhostapp.com','_blank')"
                 class="px-4 py-2 text-sm sm:text-base rounded border-blue border text-blue bg-whitesmoke"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
@@ -456,10 +474,14 @@
               </p>
             </div>
             <div class="flex justify-between mt-4">
-              <button class="px-4 py-2 rounded bg-blue text-whitesmoke">
+              <button
+                onclick="window.open('https://github.com/Malikic1/nftstore-tailwind-css','_blank')"
+                class="px-4 py-2 rounded bg-blue text-whitesmoke"
+              >
                 <i class="fa-brands fa-github"></i>&nbsp; Code
               </button>
               <button
+                onclick="window.open('https://nftstore-malikic1.netlify.app/','_blank')"
                 class="px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
@@ -481,10 +503,14 @@
               </p>
             </div>
             <div class="flex justify-between mt-4">
-              <button class="px-4 py-2 rounded bg-blue text-whitesmoke">
+              <button
+                onclick="window.open('https://github.com/Malikic1/Basel-apparel','_blank')"
+                class="px-4 py-2 rounded bg-blue text-whitesmoke"
+              >
                 <i class="fa-brands fa-github"></i>&nbsp; Code
               </button>
               <button
+                onclick="window.open('https://basel-apparel.netlify.app/','_blank')"
                 class="px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
@@ -506,10 +532,14 @@
               </p>
             </div>
             <div class="flex justify-between mt-2 sm:mt-4">
-              <button class="px-4 py-2 rounded bg-blue text-whitesmoke">
+              <button
+                onclick="window.open('https://github.com/Malikic1/nft2','_blank')"
+                class="px-4 py-2 rounded bg-blue text-whitesmoke"
+              >
                 <i class="fa-brands fa-github"></i>&nbsp; Code
               </button>
               <button
+                onclick="window.open('https://nftweb-malikic1.netlify.app/','_blank')"
                 class="px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
@@ -531,10 +561,14 @@
               </p>
             </div>
             <div class="flex justify-between mt-4">
-              <button class="px-4 py-2 rounded bg-blue text-whitesmoke">
+              <button
+                onclick="window.open('https://github.com/Malikic1/VR-web-project','_blank')"
+                class="px-4 py-2 rounded bg-blue text-whitesmoke"
+              >
                 <i class="fa-brands fa-github"></i>&nbsp; Code
               </button>
               <button
+                onclick="window.open('https://virtualreality-malikic1.netlify.app/','_blank')"
                 class="px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
@@ -556,10 +590,14 @@
               </p>
             </div>
             <div class="flex justify-between mt-4">
-              <button class="px-4 py-2 rounded bg-blue text-whitesmoke">
+              <button
+                onclick="window.open('https://github.com/Malikic1/W.-web3-landing-page','_blank')"
+                class="px-4 py-2 rounded bg-blue text-whitesmoke"
+              >
                 <i class="fa-brands fa-github"></i>&nbsp; Code
               </button>
               <button
+                onclick="window.open('https://web3-malikic1.netlify.app/','_blank')"
                 class="text-sm sm:text-base px-4 py-2 rounded border-blue border text-blue bg-whitesmoke"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
