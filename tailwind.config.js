@@ -19,7 +19,7 @@ module.exports = {
         smoke: "rgba(255, 255, 255, 0.967)",
         trans: "transparent",
         blueviolet: " rgb(152, 84, 216)",
-        blue: "rgb(0, 0, 50)",
+        blue: "rgb(0, 0,30)",
         bluesmoke: "#2f374f",
         royal: " #224dcf",
         darkgrey: "rgb(130 130 130)",
