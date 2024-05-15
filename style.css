@@ -1,0 +1,95 @@
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.courier {
+  font-family: "Courier New", Courier, monospace;
+}
+.arial {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.lucida {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.custom-shape-divider-bottom-1715644825 {
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-bottom-1715644825 svg {
+  position: relative;
+  display: block;
+  width: calc(167% + 1.3px);
+  height: 419px;
+}
+
+.custom-shape-divider-bottom-1715644825 .shape-fill {
+  fill: #2f374f;
+}
+.h_desk {
+  padding-top: 8.5rem;
+}
+@media (max-width: 650px) {
+  .shadow1 {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px 0px;
+  }
+
+  .h_desk {
+    padding-top: 2rem;
+  }
+  .bg-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(0 0 75) 50%,
+      #2f374f 50%
+    ) !important;
+  }
+}
+#header {
+  top: 1rem;
+  transition: top 0.4s;
+}
+header {
+  width: -webkit-fill-available !important;
+}
+.height_header {
+  height: 18rem;
+  transition: 4s;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.popup {
+  position: relative;
+  bottom: -100px; /* Initially at the bottom */
+  transition: bottom 0.8s ease;
+}
+
+.popup.active {
+  bottom: 0px; /* Bring it up when active */
+}
+
+.fade-in {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.8s ease;
+}
+
+.fade-in.active {
+  opacity: 1; /* Fades in when active */
+}
