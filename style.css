@@ -63,7 +63,6 @@
   }
 }
 #header {
-  top: 1rem;
   transition: top 0.4s;
 }
 header {
