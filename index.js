@@ -32,48 +32,37 @@ window.addEventListener(
 
 // rise up text animation
 document.addEventListener("DOMContentLoaded", function () {
-  const popups = document.querySelectorAll(".popup");
+  // Intersection Observer for animations
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
 
-  function checkPopup() {
-    popups.forEach((popup) => {
-      const triggerPosition = window.innerHeight - 20; // Adjust trigger position as per need
-      const popupPosition = popup.getBoundingClientRect().top;
-
-      if (popupPosition < triggerPosition) {
-        popup.classList.add("active");
-      } else {
-        popup.classList.remove("active");
+  function handleIntersection(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        // Once the animation is triggered, we don't need to observe this element anymore
+        observer.unobserve(entry.target);
       }
     });
   }
 
-  window.addEventListener("scroll", checkPopup);
-  window.addEventListener("resize", checkPopup);
+  const observer = new IntersectionObserver(
+    handleIntersection,
+    observerOptions
+  );
 
-  // Initial check in case some popups are already visible on page load
-  checkPopup();
-});
+  // Observe all animated elements
+  document.querySelectorAll(".popup, .fade-in").forEach((element) => {
+    observer.observe(element);
+  });
 
-//fadeIn animation
-document.addEventListener("DOMContentLoaded", function () {
-  const fadeIns = document.querySelectorAll(".fade-in");
-
-  function checkFadeIn() {
-    fadeIns.forEach((fadeIn) => {
-      const triggerPosition = window.innerHeight - 100; // Adjust trigger position as per need
-      const fadeInPosition = fadeIn.getBoundingClientRect().top;
-
-      if (fadeInPosition < triggerPosition) {
-        fadeIn.classList.add("active");
-      } else {
-        fadeIn.classList.remove("active");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", checkFadeIn);
-  window.addEventListener("resize", checkFadeIn);
-
-  // Initial check in case some elements are already visible on page load
-  checkFadeIn();
+  // Add active class to elements above the fold immediately
+  document.querySelectorAll(".popup, .fade-in").forEach((element) => {
+    if (element.getBoundingClientRect().top < window.innerHeight) {
+      element.classList.add("active");
+    }
+  });
 });

@@ -12,115 +12,227 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="style.css" />
-    <style></style>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        color: #2f374f;
+      }
+    </style>
   </head>
   <body class="text-light">
     <header
       id="header"
-      class="fadeIn mx-4 shadow1 fixed z-20 flex bg-smoke rounded-full md:bg-blue justify-between px-2 md:px-4 emd:px-8 py-4"
+      class="fadeIn fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200"
     >
-      <div>
-        <h2
-          class="courier ml-10 text-blue md:text-darkgrey mt-1 md:ml-0 text-xl font-bold"
-        >
-          <i>AzeezCode</i>
-        </h2>
-      </div>
-      <div
-        id="nav"
-        class="bg-trans hidden md:block md:bg-blue mt-12 md:mt-0 absolute md:relative left-6 md:left-0"
-      >
-        <ul
-          class="flex flex-col gap-y-4 md:gap-y-0 md:flex-row pl-6 md:pl-0 text-base text-blue md:text-whitesmoke"
-        >
-          <li class="mr-4 font-bold"><a href="">Home</a></li>
-          <li class="mr-4"><a href="">About</a></li>
-          <li class="mr-4"><a href="">Skill</a></li>
-          <li class="mr-4"><a href="">Portfolio</a></li>
-          <li class="mr-4"><a href="">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <button
-          class="bg-trans md:bg-whitesmoke text-bluesmoke px-2 py-1 rounded"
-        >
-          <i class="fa-solid fa-hand-sparkles text-xl"></i>
-          &nbsp;<span class="font-bold text-base">HELLO</span>
-        </button>
-      </div>
-      <button
-        id="menu_btn"
-        class="block md:hidden absolute text-darkgrey px-2 py-1 rounded"
-      >
-        <i class="fa-solid fa-bars-staggered text-xl"></i>
-      </button>
+      <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0">
+            <h2
+              class="courier text-blue text-xl font-bold hover:text-royal transition-colors"
+            >
+              <i>AzeezCode</i>
+            </h2>
+          </div>
+
+          <div class="hidden md:block">
+            <ul class="flex space-x-8">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-700 hover:text-royal font-medium transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-700 hover:text-royal font-medium transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  class="text-gray-700 hover:text-royal font-medium transition-colors"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="text-gray-700 hover:text-royal font-medium transition-colors"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-700 hover:text-royal font-medium transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="hidden md:block">
+            <button
+              class="bg-blue hover:bg-royal text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105"
+            >
+              <i class="fa-solid fa-hand-sparkles"></i>
+              <span class="ml-2">Say Hello</span>
+            </button>
+          </div>
+
+          <button
+            id="menu_btn"
+            class="md:hidden text-gray-700 hover:text-royal p-2 rounded-lg transition-colors"
+          >
+            <i class="fa-solid fa-bars-staggered text-xl"></i>
+          </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="nav" class="md:hidden hidden">
+          <ul class="py-4 space-y-2">
+            <li>
+              <a
+                href="#home"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#skills"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <div
-        class="pb-20 md:pb-0 bg-gradient flex-col-reverse md:flex-row flex bg-blue justify-evenly gap-y-8 md:gap-y-0 px-2 emd:px-0 h_desk"
+        id="home"
+        class="min-h-screen pt-24 pb-16 bg-gradient-to-br from-blue-50 via-white to-blue-50"
       >
-        <section class="w-100 md:w-1/2 z-10 text-center md:text-left">
-          <p class="lh">
-            <span class="text-3xl emd:text-4xl courier popup">HELLO, I AM</span>
-            <br />
-            <span class="arial font-bold text-5xl emd:text-7xl popup"
-              >AZEEZ</span
-            >&nbsp;&nbsp;<span class="lucida text-5xl emd:text-7xl popup"
-              >MALIK.</span
-            ><br />
-            <span class="popup text-lg emd:text-xl">
-              <span class="text-royal">
-                <i class="fa-solid fa-minus"></i>&nbsp;
-                <i class="fa-solid fa-minus"></i>&nbsp;
-                <i class="fa-solid fa-minus"></i>&nbsp;
-                <i class="fa-solid fa-minus"></i> </span
-              >&nbsp; FULL-STACK DEVELOPER.</span
-            ><br />
-          </p>
-          <p class="lucida mt-4 md:mt-8 w-100 emd:w-3/4 popup">
-            A young, creative, passionate and hardworking Coder who is willing
-            to work with clients from all over the world to build successful.
-          </p>
-
-          <p class="mt-8">
-            <button class="popup px-2 text-blue py-1 bg-light">
-              <b>&#10095;</b></button
-            >&nbsp;&nbsp;&nbsp;&nbsp;<button
-              class="popup text-lg font-bold verdana text-blue bg-light rounded px-4 py-2"
-              onclick="location.href='azeez_cv.pdf'"
-              download="azeez_cv"
-            >
-              DOWNLOAD CV
-            </button>
-          </p>
-        </section>
-
-        <div
-          class="custom-shape-divider-bottom-1715644825 absolute left-0 width-100 hidden md:block md:-mt-4 emd:mt-8 z-0"
-        >
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col-reverse md:flex-row items-center justify-between gap-12"
           >
-            <path
-              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
+            <section class="w-full md:w-1/2 text-center md:text-left space-y-6">
+              <div class="space-y-4">
+                <h3 class="courier text-2xl sm:text-3xl text-gray-600 popup">
+                  HELLO, I AM
+                </h3>
+                <h1 class="space-y-2">
+                  <span
+                    class="arial font-bold text-5xl sm:text-6xl md:text-7xl text-blue popup block"
+                  >
+                    AZEEZ
+                  </span>
+                  <span
+                    class="lucida text-5xl sm:text-6xl md:text-7xl text-royal popup block"
+                  >
+                    MALIK
+                  </span>
+                </h1>
+                <div
+                  class="flex items-center justify-center md:justify-start space-x-2 popup"
+                >
+                  <div class="h-0.5 w-8 bg-royal"></div>
+                  <p class="text-xl sm:text-2xl text-gray-700">
+                    FULL-STACK DEVELOPER
+                  </p>
+                </div>
+              </div>
 
-        <section
-          class="image_hero mt-32 bg-whitesmoke md:mt-0 bg-light p-4 w-80 md:w-64 emd:w-80 m-auto md:m-0 z-10"
-        >
-          <img
-            src="image/malik3.png"
-            class="fadeIn w-56 es:w-64 md:w-48 emd:w-64 m-auto rounded-full"
-          />
-        </section>
+              <p class="lucida text-lg text-gray-600 max-w-xl popup">
+                A young, creative, passionate and hardworking developer crafting
+                successful digital experiences for clients worldwide.
+              </p>
+
+              <div
+                class="flex items-center justify-center md:justify-start space-x-4 popup"
+              >
+                <button
+                  class="group relative px-6 py-3 font-medium text-white bg-blue hover:bg-royal rounded-full transition-all transform hover:scale-105"
+                  onclick="location.href='azeez_cv.pdf'"
+                  download="azeez_cv"
+                >
+                  <span class="flex items-center">
+                    DOWNLOAD CV
+                    <svg
+                      class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <button
+                  class="text-blue hover:text-royal p-3 rounded-full border-2 border-blue hover:border-royal transition-colors"
+                >
+                  <i class="fa-solid fa-arrow-down text-xl"></i>
+                </button>
+              </div>
+            </section>
+
+            <section class="w-full md:w-1/2 flex justify-center">
+              <div class="relative">
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-royal/10 rounded-full filter blur-3xl"
+                ></div>
+                <div
+                  class="relative bg-gradient-to-br from-white to-gray-50 p-6 rounded-[2rem] shadow-soft"
+                >
+                  <img
+                    src="image/malik3.png"
+                    class="w-64 sm:w-72 md:w-80 rounded-[1.5rem] fadeIn"
+                    alt="Azeez Malik"
+                  />
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
       <br /><br />
       <div
@@ -202,58 +314,122 @@
         </section>
       </div>
 
-      <div
-        class="mt-8 md:mt-16 px-2 py-2 sm:py-4 sm:px-4 justify-evenly text-blue"
-      >
-        <section class="w-100 md:w-1/2">
-          <div class="bg-bluesmoke justify-evenly py-4 rounded flex">
-            <div class="self-center text-light font-bold text-4xl">
-              My Skill
-            </div>
-            <div>
+      <div id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 popup">
+            <h2 class="text-4xl font-bold text-blue mb-4">My Skills</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              A diverse set of skills and technologies I've mastered to create
+              exceptional web experiences
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div
+              class="skill-icon group bg-white p-6 rounded-xl shadow-soft hover:shadow-hover text-center transform transition-all hover:-translate-y-1 popup"
+            >
               <img
-                src="image/laptop.JPEG"
-                class="w-24 rounded-full border-light border-2"
+                src="image/html.svg"
+                alt="HTML"
+                class="w-16 h-16 mx-auto mb-4"
               />
+              <p class="font-semibold text-gray-700 group-hover:text-royal">
+                HTML
+              </p>
+            </div>
+
+            <div
+              class="skill-icon group bg-white p-6 rounded-xl shadow-soft hover:shadow-hover text-center transform transition-all hover:-translate-y-1 popup"
+            >
+              <img
+                src="image/css.svg"
+                alt="CSS"
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <p class="font-semibold text-gray-700 group-hover:text-royal">
+                CSS
+              </p>
+            </div>
+
+            <div
+              class="skill-icon group bg-white p-6 rounded-xl shadow-soft hover:shadow-hover text-center transform transition-all hover:-translate-y-1 popup"
+            >
+              <img
+                src="image/javascript.svg"
+                alt="JavaScript"
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <p class="font-semibold text-gray-700 group-hover:text-royal">
+                JavaScript
+              </p>
+            </div>
+
+            <div
+              class="skill-icon group bg-white p-6 rounded-xl shadow-soft hover:shadow-hover text-center transform transition-all hover:-translate-y-1 popup"
+            >
+              <img
+                src="image/react.svg"
+                alt="React"
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <p class="font-semibold text-gray-700 group-hover:text-royal">
+                React
+              </p>
+            </div>
+
+            <div
+              class="skill-icon group bg-white p-6 rounded-xl shadow-soft hover:shadow-hover text-center transform transition-all hover:-translate-y-1 popup"
+            >
+              <img
+                src="image/tailwind.svg"
+                alt="Tailwind CSS"
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <p class="font-semibold text-gray-700 group-hover:text-royal">
+                Tailwind CSS
+              </p>
+            </div>
+
+            <div
+              class="skill-icon group bg-white p-6 rounded-xl shadow-soft hover:shadow-hover text-center transform transition-all hover:-translate-y-1 popup"
+            >
+              <img
+                src="image/bootstrap.svg"
+                alt="Bootstrap"
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <p class="font-semibold text-gray-700 group-hover:text-royal">
+                Bootstrap
+              </p>
+            </div>
+
+            <div
+              class="skill-icon group bg-white p-6 rounded-xl shadow-soft hover:shadow-hover text-center transform transition-all hover:-translate-y-1 popup"
+            >
+              <img
+                src="image/php.svg"
+                alt="PHP"
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <p class="font-semibold text-gray-700 group-hover:text-royal">
+                PHP
+              </p>
+            </div>
+
+            <div
+              class="skill-icon group bg-white p-6 rounded-xl shadow-soft hover:shadow-hover text-center transform transition-all hover:-translate-y-1 popup"
+            >
+              <img
+                src="image/git.svg"
+                alt="Git"
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <p class="font-semibold text-gray-700 group-hover:text-royal">
+                Git
+              </p>
             </div>
           </div>
-        </section>
-        <section class="flex mt-8 justify-evenly">
-          <div class="text-center shadow px-2 es:px-4 py-2 w-auto popup">
-            <img src="image/html.svg" alt="" class="w-12 m-auto" />
-            <p class="font-bold text-sm">HTML</p>
-          </div>
-          <div class="text-center shadow px-4 py-2 w-auto popup">
-            <img src="image/css.svg" alt="" class="w-12 m-auto" />
-            <p class="font-bold text-sm">CSS</p>
-          </div>
-          <div class="text-center shadow px-2 es:px-4 py-2 w-auto popup">
-            <img src="image/bootstrap.svg" alt="" class="w-12 m-auto" />
-            <p class="font-bold text-sm">Bootstrap</p>
-          </div>
-          <div class="text-center shadow px-2 es:px-4 py-2 w-auto popup">
-            <img src="image/tailwind.svg" alt="" class="w-12 m-auto" />
-            <p class="font-bold text-sm">Tailwindcss</p>
-          </div>
-        </section>
-        <section class="flex mt-8 justify-evenly">
-          <div class="text-center shadow px-2 es:px-4 py-2 w-auto popup">
-            <img src="image/javascript.svg" alt="" class="w-12 m-auto" />
-            <p class="font-bold text-sm">Javascript</p>
-          </div>
-          <div class="text-center shadow px-4 py-2 w-auto popup">
-            <img src="image/react.svg" alt="" class="w-12 m-auto" />
-            <p class="font-bold text-sm">ReactJS</p>
-          </div>
-          <div class="text-center shadow px-4 py-2 w-auto popup">
-            <img src="image/php.svg" alt="" class="w-12 m-auto" />
-            <p class="font-bold text-sm">PHP</p>
-          </div>
-          <div class="text-center shadow px-4 py-2 w-auto popup">
-            <img src="image/git.svg" alt="" class="w-12" />
-            <p class="font-bold text-sm">Git</p>
-          </div>
-        </section>
+        </div>
       </div>
 
       <div
@@ -277,35 +453,63 @@
           class="grid gap-x-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 mt-8"
         >
           <section
-            class="fade-in w-100 md:w-72 m-auto lg:m-0 p-2 sm:p-3 es:p-4 rounded-lg bg-whitesmoke"
+            class="project-card group fade-in bg-white rounded-2xl shadow-soft hover:shadow-hover overflow-hidden"
           >
-            <img src="image/3crypto.jpeg" alt="" class="rounded" />
-            <div>
-              <p class="text-royal text-2xl mt-4 font-bold">3crypto</p>
-              <p class="my-2">
-                <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >CSS</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >JS</mark
-                >&nbsp;
-                <mark class="text-light text-sm bg-darkgrey px-1">API</mark>
-              </p>
+            <div class="relative overflow-hidden">
+              <img
+                src="image/3crypto.jpeg"
+                alt="3crypto Project"
+                class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <p class="text-sm font-medium">
+                    Cryptocurrency tracking application with real-time price
+                    updates and market analysis
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="flex justify-between mt-4">
-              <button
-                onclick="window.open('https://github.com/Malikic1/cryptoweb','_blank')"
-                class="px-4 py-2 text-base rounded bg-bluesmoke text-whitesmoke"
-              >
-                <i class="fa-brands fa-github"></i>&nbsp; Code
-              </button>
-              <button
-                onclick="window.open('https://3crypto.netlify.app/','_blank')"
-                class="text-base px-4 py-2 rounded border-bluesmoke border text-bluesmoke bg-whitesmoke"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
-                Live Demo
-              </button>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-blue mb-3">3crypto</h3>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 text-xs font-medium bg-blue/10 text-blue rounded-full"
+                  >HTML</span
+                >
+                <span
+                  class="px-3 py-1 text-xs font-medium bg-blue/10 text-blue rounded-full"
+                  >CSS</span
+                >
+                <span
+                  class="px-3 py-1 text-xs font-medium bg-blue/10 text-blue rounded-full"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-3 py-1 text-xs font-medium bg-blue/10 text-blue rounded-full"
+                  >API</span
+                >
+              </div>
+              <div class="flex space-x-3">
+                <a
+                  href="https://github.com/Malikic1/cryptoweb"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors"
+                >
+                  <i class="fa-brands fa-github mr-2"></i>
+                  View Code
+                </a>
+                <a
+                  href="https://3crypto.netlify.app/"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-transparent rounded-lg text-sm font-medium text-white bg-blue hover:bg-royal transition-colors"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+                  Live Demo
+                </a>
+              </div>
             </div>
           </section>
           <section
@@ -551,36 +755,120 @@
           </section>
         </div>
       </div>
-      <div class="bg-whitesmoke mt-8 text-center py-28">
-        <p class="text-4xl text-bluesmoke popup font-bold">Connect With Me</p>
-        <p
-          class="text-base text-darkgrey popup mt-2 w-100 px-8 emd:px-0 emd:w-1/2 m-auto"
-        >
-          I'm enthusiastic about the opportunity to contribute my skills to your
-          project or team. Your message means a lot, and I'm excited about the
-          possibility of working together!
-        </p>
-        <p class="text-2xl mt-8 popup">
-          <a href="https://github.com/Malikic1"
-            ><i class="fa-brands fa-github"></i></a
-          >&nbsp;&nbsp;
-          <a href="https://www.facebook.com/olaoluwa.azeez.10"
-            ><i class="fa-brands fa-facebook"></i></a
-          >&nbsp;&nbsp;
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>&nbsp;&nbsp;
-        </p>
-        <p class="text-base text-darkgrey popup">
-          <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;
-          azeezmalik19@gmail.com
-        </p>
-        <p class="text-2xl text-bluesmoke mt-8">Let's Connect!</p>
+      <div id="contact" class="bg-gray-50 py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-blue mb-6 popup">
+              Let's Connect
+            </h2>
+            <p class="text-lg text-gray-600 mb-12 popup">
+              I'm enthusiastic about the opportunity to contribute my skills to
+              your project or team. Let's create something amazing together!
+            </p>
+
+            <div class="flex justify-center space-x-6 mb-12 popup">
+              <a
+                href="https://github.com/Malikic1"
+                target="_blank"
+                class="group p-4 bg-white rounded-full shadow-soft hover:shadow-hover transform hover:-translate-y-1 transition-all"
+              >
+                <i
+                  class="fa-brands fa-github text-2xl text-gray-700 group-hover:text-blue"
+                ></i>
+              </a>
+              <a
+                href="https://www.facebook.com/olaoluwa.azeez.10"
+                target="_blank"
+                class="group p-4 bg-white rounded-full shadow-soft hover:shadow-hover transform hover:-translate-y-1 transition-all"
+              >
+                <i
+                  class="fa-brands fa-facebook text-2xl text-gray-700 group-hover:text-blue"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="group p-4 bg-white rounded-full shadow-soft hover:shadow-hover transform hover:-translate-y-1 transition-all"
+              >
+                <i
+                  class="fa-brands fa-linkedin text-2xl text-gray-700 group-hover:text-blue"
+                ></i>
+              </a>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-soft p-8 popup">
+              <div class="flex items-center justify-center mb-6">
+                <div
+                  class="w-16 h-16 bg-blue/10 rounded-full flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-envelope text-2xl text-blue"></i>
+                </div>
+              </div>
+              <h3 class="text-2xl font-semibold text-blue mb-2">Email Me</h3>
+              <p class="text-gray-600 mb-4">Ready to start a conversation?</p>
+              <a
+                href="mailto:azeezmalik19@gmail.com"
+                class="inline-flex items-center px-6 py-3 text-white bg-blue hover:bg-royal rounded-full transition-colors"
+              >
+                azeezmalik19@gmail.com
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <footer class="bg-blue py-4">
-      <p class="text-center text-whitesmoke">
-        © 2024 AzeezCode. All rights reserved.
-      </p>
+    <footer class="bg-blue py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center space-y-4">
+          <h2 class="courier text-xl font-bold text-white">
+            <i>AzeezCode</i>
+          </h2>
+          <div class="flex space-x-6">
+            <a
+              href="#home"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-300 hover:text-white transition-colors"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Skills</a
+            >
+            <a
+              href="#portfolio"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Portfolio</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Contact</a
+            >
+          </div>
+          <p class="text-gray-400 text-sm">
+            © 2024 AzeezCode. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
+    <script src="index.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
