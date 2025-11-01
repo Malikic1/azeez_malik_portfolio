@@ -184,6 +184,72 @@ body {
   animation: changeBorderRadius 5s infinite alternate; /* 5s duration, infinite loop */
 }
 
+/* Project card enhancements */
+.project-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.project-card .media {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.project-card .content {
+  padding: 1rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card .tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.project-card .tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(47, 55, 79, 0.06);
+  color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+  .project-card .media {
+    height: 220px;
+  }
+}
+
 @keyframes changeBorderRadius {
   0% {
     border-radius: 10rem 8rem 6rem 4rem;
@@ -194,5 +260,48 @@ body {
   }
   100% {
     border-radius: 13rem 9rem 10rem 6rem;
+  }
+}
+
+/* About card and footer improvements */
+.about-card {
+  /* subtle inner shadow and consistent min-width for small screens */
+  min-width: 0;
+}
+
+.skill-bar {
+  height: 8px;
+}
+
+/* Animated fill for skill bars */
+.skill-bar {
+  animation: fillBar 1s ease-out forwards;
+}
+
+@keyframes fillBar {
+  from {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  to {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+/* Footer: simplify link layout for professionalism */
+footer a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .about-card {
+    padding: 1rem;
   }
 }

@@ -234,84 +234,157 @@
           </div>
         </div>
       </div>
-      <br /><br />
-      <div
-        class="mt-0 md:mt-20 emd:mt-16 flex flex-col md:flex-row gap-y-8 md:gap-y-0 gap-x-4 lg:gap-0 px-2 py-2 sm:py-4 sm:px-4 justify-evenly text-blue"
-      >
-        <section class="w-100 md:w-1/2 lg:w-1/3">
-          <div class="bg-bluesmoke justify-evenly py-4 rounded flex">
-            <div class="self-center font-bold text-light text-4xl">
-              About Me
-            </div>
-            <div>
-              <img
-                src="image/mk1.jpeg"
-                class="w-24 rounded-full border-light border-2"
-              />
-            </div>
-          </div>
-          <div class="w-100 es:w-96 md:w-72 m-auto">
-            <section class="flex justify-between mt-4">
-              <span class="text-blue border-l border-blue pl-4 font-bold popup"
-                ><i class="fa-solid fa-user"></i>&nbsp; Name</span
-              >
-              <span class="text-darkgrey popup">Azeez Malik</span>
-            </section>
-            <section class="flex justify-between mt-4">
-              <span class="font-bold text-blue border-l border-blue pl-4 popup"
-                ><i class="fa-solid fa-location-dot"></i>&nbsp; Location</span
-              >
-              <span class="text-darkgrey popup">Kaduna, Nigeria</span>
-            </section>
-            <section class="flex justify-between mt-4">
-              <span class="font-bold text-blue border-l border-blue pl-4 popup"
-                ><i class="fa-solid fa-briefcase"></i>&nbsp; Employment</span
-              >
-              <span class="text-darkgrey popup">Available</span>
-            </section>
-            <section class="flex justify-between mt-4">
-              <span class="font-bold text-blue border-l border-blue pl-4 popup"
-                ><i class="fa-solid fa-envelope"></i>&nbsp; Email
-              </span>
-              <span class="text-darkgrey text-sm popup"
-                >azeezmalik19@gmail.com</span
-              >
-            </section>
-          </div>
-        </section>
 
-        <section
-          class="w-100 md:w-1/2 lg:w-1/3 text-center md:text-left px-4 sm:px-0"
-        >
-          <h4 class="popup text-3xl font-bold text-blue">PHP Developer</h4>
+      <!-- Redesigned About Section -->
+      <div id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            <!-- Bio and CTA -->
+            <div class="md:col-span-2">
+              <div class="bg-white rounded-2xl p-8 shadow-soft">
+                <h3 class="text-3xl font-bold text-blue mb-4">About Me</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                  Hi, I'm Abdulazeez Abdulmalik — a dedicated full-stack
+                  developer with a focus on crafting robust, accessible and
+                  performant web applications. With 3+ years of hands-on
+                  experience in frontend and backend technologies, I collaborate
+                  with clients to turn ideas into polished digital products.
+                </p>
 
-          <p class="mt-2 text-2xl popup text-darkgrey">
-            A passionate and skilled Fullstack Developer based in Zaria,
-            NIGERIA.
-          </p>
-          <p class="mt-2 text-lg text-darkgrey popup" data-animation="rise-up">
-            Hi. My name is Abdulazeez Abdulmalik. I am a Web Developer both in
-            the Frontend Development & Backend Development field, and I'm very
-            passionate and dedicated to my work. Through my 3 years of studies
-            and as a professional web developer, I have acquired skills and
-            knowledge necessary to make your project a success.
-          </p>
-          <br />
-          <button
-            onclick="location.href='azeez_cv.pdf'"
-            download="azeez_cv"
-            class="px-2 text-light py-1 bg-blue"
-          >
-            <b>&#10095;</b></button
-          >&nbsp;&nbsp;&nbsp;&nbsp;<button
-            class="text-lg font-bold verdana text-light bg-blue rounded px-4 py-2"
-            onclick="location.href='azeez_cv.pdf'"
-            download="azeez_cv"
-          >
-            DOWNLOAD CV
-          </button>
-          <br /><br />
-        </section>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  I enjoy solving complex problems, building scalable systems
+                  and continuously learning modern tools and best practices. I’m
+                  available for freelance and full-time opportunities.
+                </p>
+
+                <div class="flex flex-wrap gap-3 mb-6">
+                  <span class="px-4 py-2 bg-blue/10 text-blue rounded-full"
+                    >HTML</span
+                  >
+                  <span class="px-4 py-2 bg-blue/10 text-blue rounded-full"
+                    >CSS</span
+                  >
+                  <span class="px-4 py-2 bg-royal/10 text-royal rounded-full"
+                    >Tailwind</span
+                  >
+                  <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full"
+                    >Bootstrap</span
+                  >
+                  <span class="px-4 py-2 bg-blue/10 text-blue rounded-full"
+                    >Node</span
+                  >
+                </div>
+
+                <div class="flex items-center space-x-4">
+                  <a
+                    href="azeez_cv.pdf"
+                    download
+                    class="inline-flex items-center px-6 py-3 bg-blue text-white rounded-full hover:bg-royal"
+                  >
+                    Download CV
+                  </a>
+                  <a
+                    href="#contact"
+                    class="inline-flex items-center px-6 py-3 border border-gray-200 rounded-full text-gray-700 hover:bg-gray-50"
+                  >
+                    Hire Me
+                  </a>
+                </div>
+              </div>
+            </div>
+            <br />
+            <!-- Profile Card -->
+            <aside class="md:col-span-1">
+              <div
+                class="about-card bg-gradient-to-br from-white to-gray-50 border border-gray-100 rounded-2xl p-6 shadow-soft"
+              >
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-16 h-16 rounded-full bg-blue/10 text-blue flex items-center justify-center font-semibold"
+                  >
+                    AM
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold text-blue">Azeez Malik</h3>
+                    <p class="text-sm text-gray-600">Full-stack Developer</p>
+                  </div>
+                </div>
+
+                <div class="mt-6 space-y-3">
+                  <p class="text-gray-700">
+                    Location:
+                    <strong class="text-gray-900">Kaduna, Nigeria</strong>
+                  </p>
+                  <p class="text-gray-700">
+                    Status:
+                    <strong class="text-gray-900">Available for hire</strong>
+                  </p>
+                  <p class="text-gray-700">
+                    Email:
+                    <a
+                      class="text-blue underline"
+                      href="mailto:azeezmalik19@gmail.com"
+                      >azeezmalik19@gmail.com</a
+                    >
+                  </p>
+                </div>
+
+                <div class="mt-6">
+                  <h4 class="text-sm font-semibold text-gray-700 mb-3">
+                    Key Skills
+                  </h4>
+                  <div class="space-y-3">
+                    <div>
+                      <div
+                        class="flex justify-between text-xs text-gray-600 mb-1"
+                      >
+                        <span>JavaScript</span><span>85%</span>
+                      </div>
+                      <div
+                        class="w-full bg-gray-200 rounded-full h-2 overflow-hidden"
+                      >
+                        <div
+                          class="skill-bar bg-blue h-2 rounded-full"
+                          style="width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="flex justify-between text-xs text-gray-600 mb-1"
+                      >
+                        <span>React</span><span>75%</span>
+                      </div>
+                      <div
+                        class="w-full bg-gray-200 rounded-full h-2 overflow-hidden"
+                      >
+                        <div
+                          class="skill-bar bg-royal h-2 rounded-full"
+                          style="width: 75%"
+                        ></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="flex justify-between text-xs text-gray-600 mb-1"
+                      >
+                        <span>PHP</span><span>70%</span>
+                      </div>
+                      <div
+                        class="w-full bg-gray-200 rounded-full h-2 overflow-hidden"
+                      >
+                        <div
+                          class="skill-bar bg-blue h-2 rounded-full"
+                          style="width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
       </div>
 
       <div id="skills" class="py-20 bg-gray-50">
@@ -452,305 +525,330 @@
         <div
           class="grid gap-x-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 mt-8"
         >
-          <section
-            class="project-card group fade-in bg-white rounded-2xl shadow-soft hover:shadow-hover overflow-hidden"
-          >
-            <div class="relative overflow-hidden">
-              <img
-                src="image/3crypto.jpeg"
-                alt="3crypto Project"
-                class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              >
-                <div class="absolute bottom-4 left-4 right-4 text-white">
-                  <p class="text-sm font-medium">
-                    Cryptocurrency tracking application with real-time price
-                    updates and market analysis
-                  </p>
+          <section class="project-card group fade-in">
+            <div class="media">
+              <img src="image/3crypto.JPEG" alt="3crypto Project" />
+              <div class="overlay" aria-hidden="true"></div>
+            </div>
+            <div class="content">
+              <div>
+                <h3 class="text-2xl font-bold text-blue mb-2">3crypto</h3>
+                <p class="text-sm text-gray-600 mb-3">
+                  A modern cryptocurrency tracking application with real-time
+                  price updates and market analysis.
+                </p>
+                <div class="tags mb-3">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">API</span>
                 </div>
               </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-2xl font-bold text-blue mb-3">3crypto</h3>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span
-                  class="px-3 py-1 text-xs font-medium bg-blue/10 text-blue rounded-full"
-                  >HTML</span
-                >
-                <span
-                  class="px-3 py-1 text-xs font-medium bg-blue/10 text-blue rounded-full"
-                  >CSS</span
-                >
-                <span
-                  class="px-3 py-1 text-xs font-medium bg-blue/10 text-blue rounded-full"
-                  >JavaScript</span
-                >
-                <span
-                  class="px-3 py-1 text-xs font-medium bg-blue/10 text-blue rounded-full"
-                  >API</span
-                >
-              </div>
-              <div class="flex space-x-3">
+              <div class="flex gap-3">
                 <a
                   href="https://github.com/Malikic1/cryptoweb"
                   target="_blank"
-                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
                 >
-                  <i class="fa-brands fa-github mr-2"></i>
-                  View Code
-                </a>
+                  <i class="fa-brands fa-github mr-2"></i> Code</a
+                >
                 <a
                   href="https://3crypto.netlify.app/"
                   target="_blank"
-                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-transparent rounded-lg text-sm font-medium text-white bg-blue hover:bg-royal transition-colors"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 rounded-lg text-sm font-medium text-white bg-blue hover:bg-royal"
                 >
                   <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
-                  Live Demo
-                </a>
+                  Live</a
+                >
               </div>
             </div>
           </section>
-          <section
-            class="fade-in w-100 md:w-72 m-auto lg:m-0 p-2 sm:p-3 es:p-4 rounded-lg bg-whitesmoke"
-          >
-            <img src="image/nft1.jpeg" alt="" class="rounded" />
-            <div>
-              <p class="text-royal mt-2 text-2xl mt-4 font-bold">NFT Market</p>
-              <p class="my-2">
-                <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >CSS</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >Javascript</mark
-                >&nbsp;
-              </p>
+          <section class="project-card group fade-in">
+            <div class="media">
+              <img src="image/nft1.jpeg" alt="NFT Market project" />
+              <div class="overlay" aria-hidden="true"></div>
             </div>
-            <div class="flex justify-between mt-4">
-              <button
-                onclick="window.open('https://github.com/Malikic1/nft-website','_blank')"
-                class="px-4 py-2 rounded bg-bluesmoke text-whitesmoke"
-              >
-                <i class="fa-brands fa-github"></i>&nbsp; Code
-              </button>
-              <button
-                onclick="window.open('https://nftmarket-malikic1.netlify.app/','_blank')"
-                class="px-4 py-2 rounded border-bluesmoke border text-bluesmoke bg-whitesmoke"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
-                Live Demo
-              </button>
+            <div class="content">
+              <div>
+                <h3 class="text-2xl font-bold text-blue mb-2">NFT Market</h3>
+                <p class="text-sm text-gray-600 mb-3">
+                  A modern NFT marketplace landing design showcasing collections
+                  and items.
+                </p>
+                <div class="tags mb-3">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="https://github.com/Malikic1/nft-website"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  <i class="fa-brands fa-github mr-2"></i> Code</a
+                >
+                <a
+                  href="https://nftmarket-malikic1.netlify.app/"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 rounded-lg text-sm font-medium text-white bg-blue hover:bg-royal"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+                  Live</a
+                >
+              </div>
             </div>
           </section>
-          <section
-            class="fade-in w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
-          >
-            <img src="image/nike.jpeg" alt="" class="rounded" />
-            <div>
-              <p class="text-royal text-2xl mt-4 font-bold">Nike Design</p>
-              <p class="my-2">
-                <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >CSS</mark
-                >
-              </p>
+          <section class="project-card group fade-in">
+            <div class="media">
+              <img src="image/nike.jpeg" alt="Nike Design project" />
+              <div class="overlay" aria-hidden="true"></div>
             </div>
-            <div class="flex justify-between mt-4">
-              <button
-                onclick="window.open('https://github.com/Malikic1/Nike-Project','_blank')"
-                class="px-4 py-2 rounded bg-bluesmoke text-whitesmoke"
-              >
-                <i class="fa-brands fa-github"></i>&nbsp; Code
-              </button>
-              <button
-                onclick="window.open('https://nike-malikic1.netlify.app/','_blank')"
-                class="px-4 py-2 rounded border-bluesmoke border text-bluesmoke bg-whitesmoke"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
-                Live Demo
-              </button>
+            <div class="content">
+              <div>
+                <h3 class="text-2xl font-bold text-blue mb-2">Nike Design</h3>
+                <p class="text-sm text-gray-600 mb-3">
+                  A pixel-perfect Nike landing page recreation with attention to
+                  detail.
+                </p>
+                <div class="tags mb-3">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="https://github.com/Malikic1/Nike-Project"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  <i class="fa-brands fa-github mr-2"></i> Code</a
+                >
+                <a
+                  href="https://nike-malikic1.netlify.app/"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 rounded-lg text-sm font-medium text-white bg-blue hover:bg-royal"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+                  Live</a
+                >
+              </div>
             </div>
           </section>
-          <section
-            class="fade-in w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
-          >
-            <img src="image/tipzone.jpeg" alt="" class="rounded" />
-            <div>
-              <p class="text-royal text-2xl mt-4 font-bold">FTS</p>
-              <p class="my-2">
-                <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >CSS</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >JS</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >PHP</mark
-                >
-              </p>
+          <section class="project-card group fade-in">
+            <div class="media">
+              <img src="image/tipzone.jpeg" alt="FTS project" />
+              <div class="overlay" aria-hidden="true"></div>
             </div>
-            <div class="flex justify-between mt-4">
-              <button
-                onclick="window.open('https://github.com/Malikic1/Tipzone','_blank')"
-                class="px-4 py-2 text-sm sm:text-base rounded bg-bluesmoke text-whitesmoke"
-              >
-                <i class="fa-brands fa-github"></i>&nbsp; Code
-              </button>
-              <button
-                onclick="window.open('https://footballtipzone.000webhostapp.com','_blank')"
-                class="px-4 py-2 text-sm sm:text-base rounded border-bluesmoke border text-bluesmoke bg-whitesmoke"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
-                Live Demo
-              </button>
+            <div class="content">
+              <div>
+                <h3 class="text-2xl font-bold text-blue mb-2">FTS</h3>
+                <p class="text-sm text-gray-600 mb-3">
+                  Sports tipping and stats platform built with PHP and JS.
+                </p>
+                <div class="tags mb-3">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JS</span>
+                  <span class="tag">PHP</span>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="https://github.com/Malikic1/Tipzone"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  <i class="fa-brands fa-github mr-2"></i> Code</a
+                >
+                <a
+                  href="https://footballtipzone.000webhostapp.com"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 rounded-lg text-sm font-medium text-white bg-blue hover:bg-royal"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+                  Live</a
+                >
+              </div>
             </div>
           </section>
 
-          <section
-            class="fade-in w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
-          >
-            <img src="image/nft2.jpeg" alt="" class="rounded" />
-            <div>
-              <p class="text-royal text-2xl mt-2 mt-4 font-bold">NFT Store</p>
-              <p class="my-2">
-                <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >CSS</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >Javascript</mark
-                >
-              </p>
+          <section class="project-card group fade-in">
+            <div class="media">
+              <img src="image/nft2.jpeg" alt="NFT Store project" />
+              <div class="overlay" aria-hidden="true"></div>
             </div>
-            <div class="flex justify-between mt-4">
-              <button
-                onclick="window.open('https://github.com/Malikic1/nftstore-tailwind-css','_blank')"
-                class="px-4 py-2 rounded bg-bluesmoke text-whitesmoke"
-              >
-                <i class="fa-brands fa-github"></i>&nbsp; Code
-              </button>
-              <button
-                onclick="window.open('https://nftstore-malikic1.netlify.app/','_blank')"
-                class="px-4 py-2 rounded border-bluesmoke border text-bluesmoke bg-whitesmoke"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
-                Live Demo
-              </button>
+            <div class="content">
+              <div>
+                <h3 class="text-2xl font-bold text-blue mb-2">NFT Store</h3>
+                <p class="text-sm text-gray-600 mb-3">
+                  Tailwind-powered NFT storefront prototype with item detail
+                  views.
+                </p>
+                <div class="tags mb-3">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="https://github.com/Malikic1/nftstore-tailwind-css"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  <i class="fa-brands fa-github mr-2"></i> Code</a
+                >
+                <a
+                  href="https://nftstore-malikic1.netlify.app/"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 rounded-lg text-sm font-medium text-white bg-blue hover:bg-royal"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+                  Live</a
+                >
+              </div>
             </div>
           </section>
-          <section
-            class="fade-in w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
-          >
-            <img src="image/basel.jpeg" alt="" class="rounded" />
-            <div>
-              <p class="text-royal text-2xl mt-4 font-bold">Basel Apparel</p>
-              <p class="my-2">
-                <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >CSS</mark
-                >
-              </p>
+          <section class="project-card group fade-in">
+            <div class="media">
+              <img src="image/basel.jpeg" alt="Basel Apparel project" />
+              <div class="overlay" aria-hidden="true"></div>
             </div>
-            <div class="flex justify-between mt-4">
-              <button
-                onclick="window.open('https://github.com/Malikic1/Basel-apparel','_blank')"
-                class="px-4 py-2 rounded bg-bluesmoke text-whitesmoke"
-              >
-                <i class="fa-brands fa-github"></i>&nbsp; Code
-              </button>
-              <button
-                onclick="window.open('https://basel-apparel.netlify.app/','_blank')"
-                class="px-4 py-2 rounded border-bluesmoke border text-bluesmoke bg-whitesmoke"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
-                Live Demo
-              </button>
+            <div class="content">
+              <div>
+                <h3 class="text-2xl font-bold text-blue mb-2">Basel Apparel</h3>
+                <p class="text-sm text-gray-600 mb-3">
+                  A clean e-commerce landing design for apparel brands.
+                </p>
+                <div class="tags mb-3">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="https://github.com/Malikic1/Basel-apparel"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  <i class="fa-brands fa-github mr-2"></i> Code</a
+                >
+                <a
+                  href="https://basel-apparel.netlify.app/"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 rounded-lg text-sm font-medium text-white bg-blue hover:bg-royal"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+                  Live</a
+                >
+              </div>
             </div>
           </section>
-          <section
-            class="fade-in w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
-          >
-            <img src="image/nft3.jpeg" alt="" class="rounded" />
-            <div>
-              <p class="text-royal text-2xl mt-4 font-bold">NFT</p>
-              <p class="my-2">
-                <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >CSS</mark
-                >
-              </p>
+          <section class="project-card group fade-in">
+            <div class="media">
+              <img src="image/nft3.jpeg" alt="NFT project" />
+              <div class="overlay" aria-hidden="true"></div>
             </div>
-            <div class="flex justify-between mt-2 sm:mt-4">
-              <button
-                onclick="window.open('https://github.com/Malikic1/nft2','_blank')"
-                class="px-4 py-2 rounded bg-bluesmoke text-whitesmoke"
-              >
-                <i class="fa-brands fa-github"></i>&nbsp; Code
-              </button>
-              <button
-                onclick="window.open('https://nftweb-malikic1.netlify.app/','_blank')"
-                class="px-4 py-2 rounded border-bluesmoke border text-bluesmoke bg-whitesmoke"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
-                Live Demo
-              </button>
+            <div class="content">
+              <div>
+                <h3 class="text-2xl font-bold text-blue mb-2">NFT</h3>
+                <p class="text-sm text-gray-600 mb-3">
+                  A simple NFT showcase site focused on visuals and layout.
+                </p>
+                <div class="tags mb-3">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="https://github.com/Malikic1/nft2"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  <i class="fa-brands fa-github mr-2"></i> Code</a
+                >
+                <a
+                  href="https://nftweb-malikic1.netlify.app/"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 rounded-lg text-sm font-medium text-white bg-blue hover:bg-royal"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+                  Live</a
+                >
+              </div>
             </div>
           </section>
-          <section
-            class="fade-in w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
-          >
-            <img src="image/vr.jpeg" alt="" class="rounded" />
-            <div>
-              <p class="text-royal text-2xl mt-4 font-bold">VR</p>
-              <p class="my-1 sm:my-2">
-                <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >CSS</mark
-                >
-              </p>
+          <section class="project-card group fade-in">
+            <div class="media">
+              <img src="image/vr.jpeg" alt="VR project" />
+              <div class="overlay" aria-hidden="true"></div>
             </div>
-            <div class="flex justify-between mt-4">
-              <button
-                onclick="window.open('https://github.com/Malikic1/VR-web-project','_blank')"
-                class="px-4 py-2 rounded bg-bluesmoke text-whitesmoke"
-              >
-                <i class="fa-brands fa-github"></i>&nbsp; Code
-              </button>
-              <button
-                onclick="window.open('https://virtualreality-malikic1.netlify.app/','_blank')"
-                class="px-4 py-2 rounded border-bluesmoke border text-bluesmoke bg-whitesmoke"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
-                Live Demo
-              </button>
+            <div class="content">
+              <div>
+                <h3 class="text-2xl font-bold text-blue mb-2">VR</h3>
+                <p class="text-sm text-gray-600 mb-3">
+                  A virtual reality landing demo exploring immersive layouts.
+                </p>
+                <div class="tags mb-3">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="https://github.com/Malikic1/VR-web-project"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  <i class="fa-brands fa-github mr-2"></i> Code</a
+                >
+                <a
+                  href="https://virtualreality-malikic1.netlify.app/"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 rounded-lg text-sm font-medium text-white bg-blue hover:bg-royal"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+                  Live</a
+                >
+              </div>
             </div>
           </section>
-          <section
-            class="fade-in w-100 md:w-72 m-auto lg:m-0 p-3 es:p-4 rounded-lg bg-whitesmoke"
-          >
-            <img src="image/w.jpeg" alt="" class="rounded" />
-            <div>
-              <p class="text-royal text-2xl mt-4 font-bold">W.</p>
-              <p class="my-2">
-                <mark class="text-light text-sm bg-darkgrey px-1">HTML</mark
-                >&nbsp;<mark class="text-light text-sm bg-darkgrey px-1"
-                  >CSS</mark
-                >
-              </p>
+          <section class="project-card group fade-in">
+            <div class="media">
+              <img src="image/w.jpeg" alt="W project" />
+              <div class="overlay" aria-hidden="true"></div>
             </div>
-            <div class="flex justify-between mt-4">
-              <button
-                onclick="window.open('https://github.com/Malikic1/W.-web3-landing-page','_blank')"
-                class="px-4 py-2 rounded bg-bluesmoke text-whitesmoke"
-              >
-                <i class="fa-brands fa-github"></i>&nbsp; Code
-              </button>
-              <button
-                onclick="window.open('https://web3-malikic1.netlify.app/','_blank')"
-                class="text-sm sm:text-base px-4 py-2 rounded border-bluesmoke border text-bluesmoke bg-whitesmoke"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;
-                Live Demo
-              </button>
+            <div class="content">
+              <div>
+                <h3 class="text-2xl font-bold text-blue mb-2">W.</h3>
+                <p class="text-sm text-gray-600 mb-3">
+                  A Web3 landing page experiment with modern components.
+                </p>
+                <div class="tags mb-3">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="https://github.com/Malikic1/W.-web3-landing-page"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  <i class="fa-brands fa-github mr-2"></i> Code</a
+                >
+                <a
+                  href="https://web3-malikic1.netlify.app/"
+                  target="_blank"
+                  class="flex-1 inline-flex justify-center items-center px-4 py-2 rounded-lg text-sm font-medium text-white bg-blue hover:bg-royal"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+                  Live</a
+                >
+              </div>
             </div>
           </section>
         </div>
@@ -831,44 +929,42 @@
     </main>
     <footer class="bg-blue py-8">
       <div class="container mx-auto px-4">
-        <div class="flex flex-col items-center space-y-4">
-          <h2 class="courier text-xl font-bold text-white">
-            <i>AzeezCode</i>
-          </h2>
-          <div class="flex space-x-6">
-            <a
-              href="#home"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Home</a
-            >
-            <a
-              href="#about"
-              class="text-gray-300 hover:text-white transition-colors"
-              >About</a
-            >
-            <a
-              href="#skills"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Skills</a
-            >
-            <a
-              href="#portfolio"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Portfolio</a
-            >
-            <a
-              href="#contact"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Contact</a
-            >
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="flex items-center space-x-4">
+            <h2 class="courier text-xl font-bold text-white">
+              <i>AzeezCode</i>
+            </h2>
+            <p class="text-gray-200 text-sm hidden sm:block">
+              Designing clean & modern web experiences
+            </p>
           </div>
-          <p class="text-gray-400 text-sm">
-            © 2024 AzeezCode. All rights reserved.
-          </p>
+
+          <div class="flex items-center space-x-4 mt-4 md:mt-0">
+            <a
+              href="https://github.com/Malikic1"
+              target="_blank"
+              class="text-gray-200 hover:text-white"
+            >
+              <i class="fa-brands fa-github text-lg"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/olaoluwa.azeez.10"
+              target="_blank"
+              class="text-gray-200 hover:text-white"
+            >
+              <i class="fa-brands fa-facebook text-lg"></i>
+            </a>
+            <a href="#contact" class="text-gray-200 hover:text-white">
+              <i class="fa-brands fa-linkedin text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-6 text-center text-gray-300 text-sm">
+          © 2024 AzeezCode. All rights reserved.
         </div>
       </div>
     </footer>
-    <script src="index.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
